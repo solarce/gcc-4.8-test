@@ -10,6 +10,7 @@ env:
     - LD=/usr/bin/gcc-4.8
 
 script:
+  - source ./gcc_env.sh
   - gcc -v
   - cc -v
   - g++ -v
