@@ -19,9 +19,8 @@ script:
 addons:
   apt:
     sources:
-      - 'ppa:ubuntu-toolchain-r/test'
+      - ubuntu-toolchain-r-test
     packages:
-      - qq
       - gcc-4.8
       - g++-4.8
 
