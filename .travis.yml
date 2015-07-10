@@ -1,0 +1,29 @@
+sude: false
+language: cpp
+compiler:
+- gcc
+
+env:
+  global:
+    - alias gcc='gcc-4.8'
+    - alias cc='gcc-4.8'
+    - alias g++='g++-4.8'
+    - alias c++='c++-4.8'
+
+script:
+  - gcc -v
+  - cc -v
+  - g++ -v
+  - c++ -v
+
+
+addons:
+  apt:
+    sources:
+      - 'ppa:ubuntu-toolchain-r/test'
+    packages:
+      - qq
+      - gcc-4.8
+      - g++-4.8
+
+
