@@ -1,13 +1,10 @@
 sude: false
-env:
-  global:
-    - CC=/usr/bin/gcc-4.8
-    - CXX=/usr/bin/g++-4.8
-    - CPP=/usr/bin/cpp-4.8
-    - LD=/usr/bin/gcc-4.8
-
+language: cpp
+compiler:
+    - gcc
+install:
+  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
 script:
-  - source ./gcc_env.sh
   - gcc -v
   - cc -v
   - g++ -v
