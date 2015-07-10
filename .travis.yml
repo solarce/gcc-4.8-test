@@ -1,7 +1,5 @@
 sude: false
 language: cpp
-compiler:
-- gcc
 env:
   global:
     - CC=/usr/bin/gcc-4.8
